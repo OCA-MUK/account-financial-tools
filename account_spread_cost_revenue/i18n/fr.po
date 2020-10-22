@@ -48,18 +48,20 @@ msgstr ""
 
 #. module: account_spread_cost_revenue
 #: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread
+#, fuzzy
 msgid ""
 "<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
 "[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
-"                                  The Balance Sheet account used for the "
+"                                      The Balance Sheet account used for the "
 "spreading.<br/>This account is the counterpart of the account in the invoice "
 "line.\n"
-"                            </span>\n"
-"                            <span class=\"help-block\" colspan=\"2\" attrs="
-"\"{'invisible':[('invoice_type','not in',('in_invoice','out_refund'))]}\">\n"
-"                                  The Expense account in the vendor bill "
+"                                </span>\n"
+"                                <span class=\"help-block\" colspan=\"2\" "
+"attrs=\"{'invisible':[('invoice_type','not in',"
+"('in_invoice','out_refund'))]}\">\n"
+"                                      The Expense account in the vendor bill "
 "line.<br/>Usually the same account of the vendor bill line.\n"
-"                            </span>"
+"                                </span>"
 msgstr ""
 "<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
 "[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
@@ -76,18 +78,20 @@ msgstr ""
 
 #. module: account_spread_cost_revenue
 #: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread
+#, fuzzy
 msgid ""
 "<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
 "[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
-"                                  The Revenue account in the invoice line."
-"<br/>Usually the same account of the invoice line.\n"
-"                            </span>\n"
-"                            <span class=\"help-block\" colspan=\"2\" attrs="
-"\"{'invisible':[('invoice_type','not in',('in_invoice','out_refund'))]}\">\n"
-"                                  The Balance Sheet account used for the "
-"spreading.<br/>This account is the counterpart of the account in the vendor "
+"                                      The Balance Sheet account.<br/>This is "
+"the account in the invoice line.\n"
+"                                </span>\n"
+"                                <span class=\"help-block\" colspan=\"2\" "
+"attrs=\"{'invisible':[('invoice_type','not in',"
+"('in_invoice','out_refund'))]}\">\n"
+"                                      The Expense account used for the "
+"spreading.<br/>This account is the counterpart of the account of the vendor "
 "bill line.\n"
-"                            </span>"
+"                                </span>"
 msgstr ""
 "<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
 "[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
@@ -100,6 +104,71 @@ msgstr ""
 "régularisation.<br/>Ce compte est la contrepartie du compte dans la ligne de "
 "facture client.\n"
 "                            </span>"
+
+#. module: account_spread_cost_revenue
+#: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread
+#, fuzzy
+msgid ""
+"<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
+"[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
+"                                      The Revenue account in the invoice "
+"line.<br/>Usually the same account of the invoice line.\n"
+"                                </span>\n"
+"                                <span class=\"help-block\" colspan=\"2\" "
+"attrs=\"{'invisible':[('invoice_type','not in',"
+"('in_invoice','out_refund'))]}\">\n"
+"                                      The Balance Sheet account used for the "
+"spreading.<br/>This account is the counterpart of the account in the vendor "
+"bill line.\n"
+"                                </span>"
+msgstr ""
+"<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
+"[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
+"                                  Le compte de revenu dans la ligne de "
+"facture.<br/>Généralement le même compte que la ligne de facture.\n"
+"                            </span>\n"
+"                            <span class=\"help-block\" colspan=\"2\" attrs="
+"\"{'invisible':[('invoice_type','not in',('in_invoice','out_refund'))]}\">\n"
+"                                 Le compte de bilan utilisé pour cette "
+"régularisation.<br/>Ce compte est la contrepartie du compte dans la ligne de "
+"facture client.\n"
+"                            </span>"
+
+#. module: account_spread_cost_revenue
+#: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread
+#, fuzzy
+msgid ""
+"<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
+"[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
+"                                      The Revenue account used for the "
+"spreading.<br/>This account is the counterpart of the account of the invoice "
+"line.\n"
+"                                </span>\n"
+"                                <span class=\"help-block\" colspan=\"2\" "
+"attrs=\"{'invisible':[('invoice_type','not in',"
+"('in_invoice','out_refund'))]}\">\n"
+"                                      The Balance Sheet account.<br/>This is "
+"the account in the vendor bill line.\n"
+"                                </span>"
+msgstr ""
+"<span class=\"help-block\" colspan=\"2\" attrs=\"{'invisible':"
+"[('invoice_type','not in',('out_invoice','in_refund'))]}\">\n"
+"                                  Le compte de bilan utilisé pour cette "
+"régularisation.<br/>Ce compte est la contrepartie du compte utilisé dans la "
+"ligne de facture.\n"
+"                            </span>\n"
+"                            <span class=\"help-block\" colspan=\"2\" attrs="
+"\"{'invisible':[('invoice_type','not in',('in_invoice','out_refund'))]}\">\n"
+"                                  Le compte de dépense dans la ligne de "
+"facture fournisseur.<br/>Généralement le même compte que la ligne de facture "
+"fournisseur.\n"
+"                            </span>"
+
+#. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__account_id
+#, fuzzy
+msgid "Account"
+msgstr "Montant"
 
 #. module: account_spread_cost_revenue
 #: model:ir.model,name:account_spread_cost_revenue.model_account_spread
@@ -148,6 +217,12 @@ msgid "Amount"
 msgstr "Montant"
 
 #. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__analytic_account_id
+#, fuzzy
+msgid "Analytic"
+msgstr "Étiquettes analytiques"
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__account_analytic_id
 msgid "Analytic Account"
 msgstr "Compte analytique"
@@ -168,6 +243,22 @@ msgid "Attachment Count"
 msgstr "Nombre de pièces jointes"
 
 #. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__auto_spread_ids
+#, fuzzy
+msgid "Auto Spread On"
+msgstr "Régularisation"
+
+#. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__auto_spread
+msgid "Auto assign template on invoice validate"
+msgstr ""
+
+#. module: account_spread_cost_revenue
+#: model:ir.model,name:account_spread_cost_revenue.model_account_spread_template_auto
+msgid "Auto create spread, based on product/account/analytic"
+msgstr ""
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_res_company__auto_archive
 msgid "Auto-archive spread"
 msgstr "Régularisation auto-archivée"
@@ -183,6 +274,13 @@ msgid "Auto-post spread lines"
 msgstr "Lignes de régularisation auto-postées"
 
 #. module: account_spread_cost_revenue
+#: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread_template
+msgid ""
+"Automatically use this spread template on invoice validation for invoice "
+"lines using below product and/or account and/or analytic,"
+msgstr ""
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__spread_account_id
 #: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread
 msgid "Balance sheet account / Spread account"
@@ -194,14 +292,14 @@ msgid "Cancel"
 msgstr "Annuler"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:464
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:480
 #, python-format
 msgid "Cannot delete spread(s) that are linked to an invoice line."
 msgstr ""
 "Impossible de supprimer des régularisation(s) liées à une ligne de facture."
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:469
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:485
 #, python-format
 msgid "Cannot delete spread(s): there are posted Journal Entries."
 msgstr ""
@@ -209,7 +307,7 @@ msgstr ""
 "comptables comptabilisées."
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:436
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:452
 #, python-format
 msgid "Cannot unlink invoice lines if the invoice is validated"
 msgstr "Ne peut pas supprimer les lignes de facture si la facture est validée"
@@ -223,6 +321,7 @@ msgstr "Sociétés"
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__company_id
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__company_id
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__company_id
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__company_id
 msgid "Company"
 msgstr "Société"
 
@@ -265,6 +364,7 @@ msgstr "Créer un nouveau tableau de régularisation"
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__create_uid
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_line__create_uid
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__create_uid
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__create_uid
 msgid "Created by"
 msgstr "Créé par"
 
@@ -279,6 +379,7 @@ msgstr "Écritures créée(s) "
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__create_date
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_line__create_date
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__create_date
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__create_date
 msgid "Created on"
 msgstr "Créé le"
 
@@ -387,6 +488,7 @@ msgstr "Afficher le bouton Recalculer"
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__display_name
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_line__display_name
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__display_name
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
 
@@ -430,6 +532,18 @@ msgid "Expense account"
 msgstr "Compte de dépense"
 
 #. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__exp_rev_account_id
+#, fuzzy
+msgid "Expense/Revenue Account"
+msgstr "Compte de revenus"
+
+#. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__exp_rev_account_id
+#, fuzzy
+msgid "Expense/revenue account"
+msgstr "Compte de dépense"
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__message_follower_ids
 msgid "Followers"
 msgstr "Abonnés"
@@ -445,10 +559,20 @@ msgid "Followers (Partners)"
 msgstr "Abonnés (Partenaires)"
 
 #. module: account_spread_cost_revenue
+#: code:addons/account_spread_cost_revenue/models/account_spread_template.py:150
+#, python-format
+msgid ""
+"Followings are duplicated combinations,\n"
+"\n"
+"%s\n"
+msgstr ""
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__id
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__id
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_line__id
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__id
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__id
 msgid "ID"
 msgstr "ID"
 
@@ -463,12 +587,19 @@ msgid "If checked, new messages require your attention."
 msgstr "Si coché, de nouveaux messages demandent votre attention."
 
 #. module: account_spread_cost_revenue
+#: model:ir.model.fields,help:account_spread_cost_revenue.field_account_spread_template__auto_spread
+msgid ""
+"If checked, provide option to auto create spread during invoice validation, "
+"based on product/account/analytic in invoice line."
+msgstr ""
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,help:account_spread_cost_revenue.field_account_spread__message_has_error
 msgid "If checked, some messages have a delivery error."
 msgstr "Si actif, certains messages ont une erreur de livraison."
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:450
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:466
 #: model:ir.model,name:account_spread_cost_revenue.model_account_invoice
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__invoice_id
 #, python-format
@@ -496,6 +627,12 @@ msgstr "Référence de facture"
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__invoice_type
 msgid "Invoice Type"
 msgstr "Type de facture"
+
+#. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__use_invoice_line_account
+#, fuzzy
+msgid "Invoice account as spread account"
+msgstr "Compte de bilan / Compte de régularisation"
 
 #. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__invoice_line_id
@@ -536,6 +673,7 @@ msgstr "Écriture comptable"
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard____last_update
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_line____last_update
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template____last_update
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto____last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -544,6 +682,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__write_uid
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_line__write_uid
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__write_uid
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__write_uid
 msgid "Last Updated by"
 msgstr ""
 
@@ -552,11 +691,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__write_date
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_line__write_date
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__write_date
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__write_date
 msgid "Last Updated on"
 msgstr ""
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_invoice_line.py:60
+#: code:addons/account_spread_cost_revenue/models/account_invoice_line.py:61
 #, python-format
 msgid "Link Invoice Line with Spread Board"
 msgstr "Lier la ligne de facture à une régularisation"
@@ -603,11 +743,12 @@ msgstr "Mois"
 #. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__name
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__name
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__name
 msgid "Name"
 msgstr "Nom"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/wizards/account_spread_invoice_line_link_wizard.py:141
+#: code:addons/account_spread_cost_revenue/wizards/account_spread_invoice_line_link_wizard.py:159
 #, python-format
 msgid "New Spread Board"
 msgstr "Nouvelle régularisation"
@@ -651,6 +792,12 @@ msgid "Number of unread messages"
 msgstr ""
 
 #. module: account_spread_cost_revenue
+#: model:ir.model.fields,help:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__exp_rev_account_id
+#: model:ir.model.fields,help:account_spread_cost_revenue.field_account_spread_template__exp_rev_account_id
+msgid "Optional account to overwrite the existing expense/revenue account"
+msgstr ""
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__period_type
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template__period_type
 msgid "Period Type"
@@ -663,9 +810,20 @@ msgid "Period length for the entries"
 msgstr "Durée de la période pour les écritures"
 
 #. module: account_spread_cost_revenue
+#: code:addons/account_spread_cost_revenue/models/account_spread_template.py:80
+#, python-format
+msgid "Please select product and/or account on auto spread options"
+msgstr ""
+
+#. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__posted_amount
 msgid "Posted Amount"
 msgstr "Montant comptabilisé"
+
+#. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__product_id
+msgid "Product"
+msgstr ""
 
 #. module: account_spread_cost_revenue
 #: selection:account.spread,period_type:0
@@ -704,7 +862,7 @@ msgid "Revenue account"
 msgstr "Compte de revenus"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:455
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:471
 #, python-format
 msgid "Spread"
 msgstr "Régularisation"
@@ -743,9 +901,9 @@ msgid "Spread Costs/Revenues"
 msgstr "Régularisation Coûts/Revenus"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_invoice_line.py:40
-#: code:addons/account_spread_cost_revenue/wizards/account_spread_invoice_line_link_wizard.py:120
-#: code:addons/account_spread_cost_revenue/wizards/account_spread_invoice_line_link_wizard.py:190
+#: code:addons/account_spread_cost_revenue/models/account_invoice_line.py:41
+#: code:addons/account_spread_cost_revenue/wizards/account_spread_invoice_line_link_wizard.py:135
+#: code:addons/account_spread_cost_revenue/wizards/account_spread_invoice_line_link_wizard.py:215
 #, python-format
 msgid "Spread Details"
 msgstr ""
@@ -763,6 +921,7 @@ msgstr "Lignes de régularisation"
 #. module: account_spread_cost_revenue
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__template_id
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__template_id
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_template_auto__template_id
 msgid "Spread Template"
 msgstr "Modèle de régularisation"
 
@@ -790,7 +949,7 @@ msgid "Spread lines"
 msgstr "Lignes de régularisation"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:375
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:391
 #, python-format
 msgid "Spread table '%s' created."
 msgstr "Tableau de régularisation '%s' créé."
@@ -809,19 +968,19 @@ msgid "Supplier"
 msgstr "Fournisseur"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:261
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:277
 #, python-format
 msgid "The Invoice Type does not correspond to the Invoice"
 msgstr "Le Type de facture ne correspond pas à la facture"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:269
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:285
 #, python-format
 msgid "The Journal is not consistent with the account moves."
 msgstr "Le journal n'est pas cohérent avec les écritures comptables."
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:282
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:298
 #, python-format
 msgid ""
 "The Spread Template (Purchases) is not compatible with selected invoice type"
@@ -830,7 +989,7 @@ msgstr ""
 "facture sélectionné"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:277
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:293
 #, python-format
 msgid ""
 "The Spread Template (Sales) is not compatible with selected invoice type"
@@ -852,6 +1011,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread
 msgid "This will delete the move. Are you sure ?"
 msgstr "Cela supprimera la pièce comptable. Êtes-vous sûr?"
+
+#. module: account_spread_cost_revenue
+#: code:addons/account_spread_cost_revenue/models/account_invoice_line.py:99
+#, python-format
+msgid "Too many auto spread templates (%s) matched with the invoice line, %s"
+msgstr ""
 
 #. module: account_spread_cost_revenue
 #: model_terms:ir.ui.view,arch_db:account_spread_cost_revenue.view_account_spread
@@ -884,13 +1049,13 @@ msgid "Unlinked"
 msgstr "Non-lié"
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:456
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:472
 #, python-format
 msgid "Unlinked '%s' (invoice line %s)."
 msgstr "Non-lié '%s' (ligne de facture %s)."
 
 #. module: account_spread_cost_revenue
-#: code:addons/account_spread_cost_revenue/models/account_spread.py:451
+#: code:addons/account_spread_cost_revenue/models/account_spread.py:467
 #, python-format
 msgid "Unlinked invoice line '%s' (view %s)."
 msgstr "Ligne de facture non-liée '%s' (voir %s)."
@@ -914,6 +1079,21 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__unspread_amount
 msgid "Unspread Amount"
 msgstr "Montant non régularisé"
+
+#. module: account_spread_cost_revenue
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread__use_invoice_line_account
+#: model:ir.model.fields,field_description:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__use_invoice_line_account
+#, fuzzy
+msgid "Use invoice line's account"
+msgstr "Compte de revenus"
+
+#. module: account_spread_cost_revenue
+#: model:ir.model.fields,help:account_spread_cost_revenue.field_account_spread_invoice_line_link_wizard__use_invoice_line_account
+#: model:ir.model.fields,help:account_spread_cost_revenue.field_account_spread_template__use_invoice_line_account
+msgid ""
+"Use invoice line's account as Balance sheet / spread account.\n"
+"In this case, user need to select expense/revenue account too."
+msgstr ""
 
 #. module: account_spread_cost_revenue
 #: selection:account.spread,invoice_type:0
